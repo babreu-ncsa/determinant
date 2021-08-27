@@ -5,7 +5,7 @@
 !! National Center for Supercomputing Applications (NCSA)
 !!  
 !! Creation Date: Friday, 27th August 2021, 11:32:02 am
-!! Last Modified: Friday, 27th August 2021, 12:17:32 pm
+!! Last Modified: Friday, 27th August 2021, 1:01:47 pm
 !!  
 !! Copyright (c) 2021, Bruno R. de Abreu, National Center for Supercomputing Applications.
 !! All rights reserved.
@@ -47,8 +47,6 @@ end program determinant
 
 subroutine getdet(ord,m,det)
     implicit none
-!    integer, parameter :: dp = real64   !! double precision
-!    integer, parameter :: i32 = int32   !! 32 bits integer
     integer, intent(in) :: ord     !! order of matrix
     real*8, dimension(ord,ord), intent(in) :: m   !! matrix
     real*8, intent(out) :: det    !! determinant
